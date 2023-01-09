@@ -48,7 +48,7 @@ nav ul li a:hover{
   margin-right: 15px;
   font-size: 18px;
 }
-.btn{
+#btn{
   background: #000;
   border-radius: 6px;
   padding: 9px 25px;

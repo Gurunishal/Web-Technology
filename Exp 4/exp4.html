@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+
+<style>
+    ul 
+    {
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-weight: 600;
+        color: white;
+        font-family: sans-serif;
+    }
+    
+    li a 
+    {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        width: 23%; 
+        text-align: center;
+    }
+
+    li a:hover 
+    {
+        background-color: #7aaec4;
+    }
+    
+    body
+    {
+        background-image: url(background.png);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    
+    .login-container 
+    {
+        left: 25%;
+        top: 25%;
+        width: 20%;
+        height: 45%;
+        padding: 12px 20px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        float: center;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .login-container button
+    {
+        width: 100%;
+        background-color: #7aaec4;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }  
+
+    input[type=text], select 
+    {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=email], select 
+    {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=password], select 
+    {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=password], select 
+    {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .signup-container 
+    {
+        left: 50%;
+        top: 25%;
+        width: 21%;
+        height: 55%;
+        padding: 12px 20px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        float: center;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .signup-container button
+    {
+        width: 100%;
+        background-color: #7aaec4;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+</style>
+
+<body>
+    <ul>
+        <li><a><u>Home</u></a></li>
+        <li><a><u>Support</u></a></li>
+        <li><a><u>Contact</u></a></li>
+        <li><a><u>Help</u></a></li>
+    </ul>
+<div class="login-container">
+    <form>
+        <h3 >Sign in</h3>
+        <label for="Username">Username</label>
+        <br><input type="text" placeholder="Enter your username">
+        <br><br><label for="Password">Password</label>
+        <br><input type="password" placeholder="Enter your password">
+        <br><br><button type="submit">Login In</button>
+    </form>
+</div>
+<div class="signup-container">
+    <form>
+        <h3>Sign up</h3>
+        <label>Name</label>
+        <br><input type="text" placeholder="Enter your name">
+        <br><br><label>Email</label>
+        <br><input type="email" placeholder="Enter your mail">
+        <br><br><label>Password</label>
+        <br><input type="password" placeholder="Enter a password">
+        <br><br><label>Re-enter Password</label>
+        <br><input type="password" placeholder="Confirm password">
+        <br><br><button type="submit">Sign Up</button>
+    </form>
+</div>
+</body>
+</html>

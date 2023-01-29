@@ -1,0 +1,46 @@
+#outer {
+    border: 2px solid black;
+    display: inline-block;
+    width: 32%;
+    height: 40%;
+}
+
+#header {
+    padding: 1%;
+    background-color: lightgreen;
+}
+
+#header span {
+    font-weight: bold;
+}
+
+#inputs {
+    display: inline-block;
+    padding: 1%;
+}
+
+input {
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+}
+
+#results {
+    margin: 5%;
+    padding: 1%;
+    display: inline-block;
+    width: 40%;
+}
+
+#results p {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    color: blue;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#results_div {
+    text-align: center;
+}

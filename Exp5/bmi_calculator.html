@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi_calculator.css">
+    <script>
+        function calculator() {
+            var w = parseInt(document.getElementById("weight").value)
+            var h = parseInt(document.getElementById("height").value)
+
+            var bmi = (w / ((h / 100) * (h / 100)))
+
+            var BMI = bmi.toFixed(1)
+
+            document.getElementById("res").innerHTML = BMI
+
+            if (BMI < 18.0) {
+                document.getElementById("results_div").innerHTML = "Underweight BMI"
+            } else if (BMI > 18.0 && BMI < 25) {
+                document.getElementById("results_div").innerHTML = "Normal BMI"
+            } else if (BMI > 25 && BMI < 30.0) {
+                document.getElementById("results_div").innerHTML = "Overweight BMI"
+            } else if (BMI > 30.0) {
+                document.getElementById("results_div").innerHTML = "Obese BMI"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="header">
+            <span>Body Mass Index (BMI)</span> <br> A measure of body fat in adults
+        </div>
+        <div>
+            <div id="inputs">
+                <label for="weight">Weight (in kg)</label><br>
+                <input type="text" name="weight" id="weight" onkeyup="calculator()">
+                <br>
+                <label for="height">Height (in cm)</label><br>
+                <input type="text" name="height" id="height" onkeyup="calculator()">
+            </div>
+            <div id="results">
+                <p id="res">0.0</p>
+                <div id="results_div">Your BMI Displays here</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

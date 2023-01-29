@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="q1.css">
+    <script>
+        function operations(operator) 
+        {
+            var operand1 = document.getElementById("num1").value
+            var operand2 = document.getElementById("num2").value
+
+            var results = eval(parseInt(operand1) + operator + parseInt(operand2))
+
+            document.getElementById("results_div").innerHTML = "Result: " + results
+        }
+
+        function reset() 
+        {
+            document.getElementById("results_div").innerHTML = "Result: "
+        }
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Basic Calculator</h1>
+        <input type="text" id="num1" name="number1" placeholder="Number 1, Ex: 25">
+        <input type="text" id="num2" name="number2" placeholder="Number 2, Ex: 25">
+        <br>
+        <button onclick="operations('+')">Add (+)</button>
+        <button onclick="operations('-')">Subtract (-)</button>
+        <button onclick="operations('*')">Multiply (x)</button>
+        <button onclick="operations('/')">Divide (/)</button>
+        <br>
+        <div id="results_div">Result: </div>
+
+        <button onclick="reset()" id="clear_btn">Clear</button>
+    </div>
+</body>
+
+</html>

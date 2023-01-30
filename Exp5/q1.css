@@ -5,6 +5,7 @@ body {
 #content {
     display: inline-block;
     background-color: lightgrey;
+    border: 1px solid black;
     padding: 1%;
     width: 40%;
     height: 40%;
@@ -24,16 +25,17 @@ input {
     font-size: medium;
     font-family: sans-serif;
     width: 46%;
-    border: 3px solid gray;1
+    border: 1px solid black;
 }
 
 button {
     width: 20%;
     color: white;
-    background-color: skyblue;
+    background-color:darkcyan;
     padding: 1%;
+    font-weight: bolder;
     margin: 2%;
-    border: 2px;
+    border: solid 1px black;
     margin-top: 9%;
     margin-bottom: 1%;
 }
@@ -41,7 +43,8 @@ button {
 #results_div {
     display: inline-block;
     width: 68%;
-    border: 3px solid grey;
+    border: 1px solid black;
+    font-weight: bolder;
     padding: 2%;
     font-size: medium;
     font-family: sans-serif;

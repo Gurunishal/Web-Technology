@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>DEMO</title>
-        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="q7b.css">
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
         <script>
             $(document).ready(function(){
@@ -39,6 +39,12 @@
                 $("#bt12").click(function(){
                     $("#style").animate({height:"0px", width:"0px"},1000);
                 });
+                $("#bt13").click(function(){
+                    $("#style").animate({height:"200px", width:"200px"},1000);
+                });
+                $("#bt14").click(function(){
+                    $("#style").animate({height:"400px", width:"400px"},1000);
+                });
             });
 
 
@@ -50,28 +56,34 @@
         <div class="in">
             <h3>Manipulate CSS Styles using JQuery :</h3>
             <input type="color"  id="bt1">
-            <!-- <input type="button" value="Blue" id="bt2"> -->
         </div>
         <div class="in">
-            <h3>Show, Hide and Toggle : </h3>
+            <h3>Show, Hide and Toggle : </h3><br>
             <input type="button" value="Show" id="bt3">
             <input type="button" value="Hide" id="bt4">
             <input type="button" value="Toggle" id="bt5">
         </div>
+        <br><br>
         <div class="in">
-            <h3>FadeIn, FadeOut and Fade-Toggle : </h3>
+            <h3>FadeIn, FadeOut and Fade-Toggle : </h3><br>
             <input type="button" value="FadeIn" id="bt6">
             <input type="button" value="FadeOut" id="bt7">
             <input type="button" value="Fade-Toggle" id="bt8">
         </div>
+        <br><br>
         <div class="in">
-            <h3>SlideUp, SlideDown and Slide-Toggle : </h3>
+            <h3>SlideUp, SlideDown and Slide-Toggle : </h3><br>
             <input type="button" value="SlideUp" id="bt9">
             <input type="button" value="SlideDown" id="bt10">
             <input type="button" value="Slide-Toggle" id="bt11">
         </div>
-        <input type="button" value="Animate" style="margin: 0px 50%; background-color: rgb(233, 220, 204); font-weight: bolder;" id="bt12">
-         
+        <br><br>
+        <div class="in">
+            <h3>Animate: </h3>:
+            <input type="button" value="Animate (minimize)" style="background-color:red; font-weight: bolder;" id="bt12">
+            <input type="button" value="Animate (reset)" style="background-color:red; font-weight: bolder;" id="bt13">
+            <input type="button" value="Animate (maximize)" style="background-color:red; font-weight: bolder;" id="bt14">
+        </div>
         
     </body>
 </html>

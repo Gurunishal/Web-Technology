@@ -1,53 +1,45 @@
-function change(){
-    var div=document.getElementById('box');
-    var bgcolor=document.getElementById('bgcolor').value;
-    div.style.backgroundColor = bgcolor;
-
-    var textcolor=document.getElementById('textcolor').value;
-    div.style.color=textcolor;
-
-    var tsize = document.getElementById('textsize').value;
-    div.style.fontSize=tsize;
-
-    var width=document.getElementById('width').value;
-    div.style.width=width+"px";
-
-    var height=document.getElementById('height').value;
-    div.style.height=height+"px";
-
-    var radius=document.getElementById('range').value;
-    div.style.borderRadius=radius+"%";
-
-}
-
-var car=null;
-var timer=null;
-
-function init(){
-    car= document.getElementById('car');
-    car.style.position='relative';
-    car.style.left='2px';        //initial position of the car
-    clearTimeout(timer);
-    document.getElementById('dang').innerHTML='';
-}
-
-function move(){
-    car.style.left=parseInt(car.style.left)+2+"px";
-    timer=setTimeout(move,10);
-    if( parseInt(car.style.left) >= 900 )
-    {
-        halt();
-        document.getElementById('dang').innerHTML='<div id="dang" style="text-align:center;position:absolute;border-color: red; background-color:red; color:white; right: 100px; bottom: 200px;width:80px; height:50px"><b>Danger</b></div>';
+function bg_Color(){
+    var div = document.getElementById("box");
+    var bgcolor = document.getElementById("bgcolor").value;
+    if (bgcolor == document.getElementById("tcolor").value){
+        alert("Cannot keep same color")
     }
-    
+    else{
+        div.style.backgroundColor = bgcolor;
+    }
 }
 
-function halt(){
-    clearTimeout(timer);
+function textColor(){
+    var div = document.getElementById("box");
+    var tcolor = document.getElementById("tcolor").value;
+    if (document.getElementById("bgcolor").value == tcolor){
+        alert("Cannot keep same color")
+    }
+    else{
+        div.style.color = tcolor;
+    }
 }
 
-function reset(){
-    car= document.getElementById('car');
-    car.style.position='relative';
-    car.style.left='2px';  
+function textSize(){
+    var div = document.getElementById("box");
+    var tsize = document.getElementById("tsize").value;
+    div.style.fontSize = tsize + "px";
+}
+
+function boxWidth(){
+    var div = document.getElementById("box");
+    var width = document.getElementById("width").value;
+    div.style.width = width + "px";
+}
+
+function boxHeight(){
+    var div = document.getElementById("box");
+    var height = document.getElementById("height").value;
+    div.style.height = height + "px";
+}
+
+function opacity_(){
+    var div = document.getElementById("box");
+    var opacity = document.getElementById("opacity").value;
+    div.style.opacity = opacity + "%";
 }
